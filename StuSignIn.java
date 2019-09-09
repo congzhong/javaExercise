@@ -16,61 +16,35 @@ public class StuSignIn{
 			int systemSocre = sc.nextInt();
 			if(systemSocre>=0&systemSocre<=100){
 				System.out.println(tip);
-			}
-			else{
-				while(true){
-					System.out.println(errorTip);
-					System.out.println("请输入"+name+"的成绩:");
-					systemSocre = sc.nextInt();
-					if(systemSocre>=0&systemSocre<=100){
-						System.out.println(tip);
-						break;
+				break;
 						}
-					else{
-						System.out.println(errorTip);
-						}		
+			else{
+					System.out.println(errorTip);	
 						}
 				}
+		while(true){
 			System.out.println("请输入"+name+"的年龄:");
 			int systemAge = sc.nextInt();
 			if(systemAge>=6&systemAge<=18){
 				System.out.println(tip);
-				}
+				break;
+					}
 			else{
-				System.out.println(errorTip);
-				while(true){
-					System.out.println("请输入"+name+"的年龄:");
-					systemAge = sc.nextInt();
-					if(systemAge>=8&systemAge<=18){
-						System.out.println(tip);
-						break;
-							}
-					else{
-						System.out.println(errorTip);
-							}		
+				System.out.println(errorTip);	
 							}
 				}
+		while(true){
 			System.out.println("请输入"+name+"的性别:");
 			String systemSex = sc.next();
 			if(systemSex.equals(men)|systemSex.equals(man)){
 				System.out.println(tip);
-			}	
+				break;
+					}	
 			else{
 				System.out.println(errorTip);
-				while(true){
-					System.out.println("请输入"+name+"的性别:");
-					systemSex = sc.next();
-					if(systemSex.equals(men)|systemSex.equals(man)){
-						System.out.println(tip);
-						break;
 					}
-					else{
-						System.out.println(errorTip);
-							}		
-						}
 				}
 			System.out.println("登录成功！！！");
-			break;
 		}
 	}
-}
+
